@@ -5,6 +5,12 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainigBoxingApp", "TrainigBoxingApp.csproj", "{43FACF12-E491-4BB0-8E07-1F27393BD1AC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{89CFD131-EDA3-4AB2-9BDC-55E2D63AAFDD}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Startup.cs = Startup.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
