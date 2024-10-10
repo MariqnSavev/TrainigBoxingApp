@@ -8,15 +8,15 @@ using TrainigBoxingApp.Data;
 
 public class Startup
 {
-	public Startup(IConfiguration configuration)
-	{
+    public Startup(IConfiguration configuration)
+    {
         Configuration = configuration;
     }
+
     public IConfiguration Configuration { get; }
 
     public void ConfigureServices(IServiceCollection services)
     {
-        // Регистрация на DbContext с връзка към базата данни
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
@@ -50,4 +50,3 @@ public class Startup
         });
     }
 }
-

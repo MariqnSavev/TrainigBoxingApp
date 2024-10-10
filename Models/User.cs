@@ -3,8 +3,8 @@
     public class User
     {
         public int Id { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public ICollection<Workout> Workouts { get; set; }
+        public string Username { get; set; } = string.Empty; // Инициализация
+        public string Password { get; set; } = string.Empty; // Инициализация
+        public ICollection<Workout> Workouts { get; set; } = new List<Workout>(); // Инициализация
     }
 }

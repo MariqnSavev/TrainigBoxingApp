@@ -1,0 +1,10 @@
+@model TrainigBoxingApp.Models.User
+
+<h1>Create User</h1>
+<form asp-action="Create">
+    <label>Username:</label>
+    <input asp-for="Username" />
+    <label>Password:</label>
+    <input asp-for="Password" type="password" />
+    <button type="submit">Save</button>
+</form>
