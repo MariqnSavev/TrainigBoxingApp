@@ -1,10 +1,16 @@
-﻿namespace TrainigBoxingApp.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TrainigBoxingApp.Models
 {
     public class User
     {
         public int Id { get; set; }
-        public string Username { get; set; } = string.Empty; // Инициализация
-        public string Password { get; set; } = string.Empty; // Инициализация
-        public ICollection<Workout> Workouts { get; set; } = new List<Workout>(); // Инициализация
+
+        [Required(ErrorMessage = "Имейлът е задължителен.")]
+        [EmailAddress(ErrorMessage = "Невалиден имейл адрес.")]
+        public string Email { get; set; }
+
+        [Required(ErrorMessage = "Името е задължително.")]
+        public string FullName { get; set; } // Име на свойството
     }
 }
